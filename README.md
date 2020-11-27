@@ -37,7 +37,9 @@ a simple node web app used for sharing and hosting files across local network
 
 2. **git clone https://github.com/mrdcvlsc/mshare.git**
 
-3. **npm install**
+3. **cd mshare**
+
+4. **npm install**
 
 ----------------------------------------------------------
 
