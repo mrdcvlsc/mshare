@@ -4,7 +4,6 @@
   "description": "a simple web file hosting/sharing app",
   "main": "fileserver_win.js",
   "scripts": {
-    "start": "node fileserver_linux.js",
     "start": "node fileserver_win.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
