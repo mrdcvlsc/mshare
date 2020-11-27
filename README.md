@@ -1,38 +1,74 @@
 # mshare
 a simple node web app used for sharing and hosting files across local network
 
-## SETUP INSTRUCTIONS
+## REQUIREMENTS
 
-1. You should have node installed in your device, and was added to Environment Variables
+1. You should have nodejs installed in your system
 
-2. Download or clone this repository
+2. You should have set your nodejs bin path to environment variables(the installer for windows automatically does this as I remember)
 
-3. open command line and change directory inside this repository **"cd 'path/to/folder/mshare'**
+3. You should have internet connection to install dependencies
 
-4. in the command line run **"npm install"** to install dependencies(internet connection needed)
+----------------------------------------------------------
 
-5. if you are using *linux* use the **"make"** command to see how to compile the html_generate.cpp
+## SETUP FOR BEGINERS
+
+1. Select or create a folder/directory where you want to put this project.
+
+2. Download this repository, and extract it.
+
+3. Move or Copy the project's folder called **mshare** into your created or selected folder
+
+4. Go inside the **mshare** folder after you copy/move it... then copy its directory/path
+
+5. open the command line(cmd) then type "**cd "**" then press **ctrl+v**(paste the path) then put a double-quote(**"**) at the end then hit enter.
+
+    ex: **cd "the/copied/path/mshare"**
+    
+6. then we need to install dependencies(internet connection required), to do that input the command below in the command line and hit enter 
+
+  **npm install**
+  
+----------------------------------------------------------
+  
+## SETUP FOR THOSE WHO KNOW GIT... YOU KNOW THIS ALREADY, in the command line enter the following
+
+1. **cd your/selected/directory**
+
+2. **git clone https://github.com/mrdcvlsc/mshare.git**
+
+3. **npm install**
+
+----------------------------------------------------------
 
 ## TO START HOSTING/SERVING FILES
 
-WINDOWS - to start run in command line **"node fileserver_win.js"** in the same mshare folder directory to start serving/hosting files
+after you install dependencies(npm install) in the mshare directory... input the command below in command line according to your environment.
 
-LINUX   - **"node fileserver_linux.js"**
+this will start the main js app that will serve/host the web app in your local network
+
+### FOR WINDOWS
+
+**"node fileserver_win.js"** 
+
+### FOR LINUX
+
+**"node fileserver_linux.js"**
+
+----------------------------------------------------------
 
 ## TO VIEW SHARED FILES FROM OTHER DEVICES
 
-After step starting node, you should be able to see that the program is running and you should see an IP address
+To view files from other devices you should have done the "TO START HOSTING/SERVING FILES" step above.
 
-Now every devices that is connected to the same network where your main device that is running the **"node filewebserver.js"** is also connected should be able to upload and download files that is being hosted by main device.
+1.) to access the web app in other devices, use the appropriate IP address being displayed by the "node fileserver_win.js or fileserver_linux.js" use that as a url for other devices and add a "/files" in it 
 
-1.) to access the web app in other devices, use the appropriate IP address being displayed by the "node filewebserver.js" use that as a url for other devices and add a "/files" in it 
-
-  Windows host EX: http://HOST_IP/files
+  Windows host url format: http://HOST_IP/files
   
-  Linux host EX: http://HOST_IP:3000/files    (can also setup linux to do the same http request like in windows but theres it more work that using port 3000)
+  Linux host url format: http://HOST_IP:3000/files (you can also setup linux to do the same http request like in windows but there is more work that using port 3000)
   
-Enter your host url in other device, now you can access the hosted files and upload or download files to/from the host
-
+ex in browser : ***https:192.168.5.123/files*** or add a :3000 for linux ***https:192.168.5.123:3000/files***  
+  
 ## sample image
 
 ![Main Device Running NODE](/public/images/commandline.png) ![Other Device in the same network](/public/images/otherdevice.jpg)
