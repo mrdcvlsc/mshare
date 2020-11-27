@@ -1,0 +1,114 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	margin: auto;
+	text-shadow: 0px 2px 2px grey;
+}
+
+body{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.main{
+
+	font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
+	padding-top: 20px;
+
+	margin: auto;
+	margin-top: 2%;
+
+	width: auto;
+	max-width: 420px;
+	min-width: 320px;
+
+	min-height: 420px;
+
+	border: 1px solid darkgrey;
+	border-radius: 7px 7px 7px 7px / 7px 7px 7px 7px;
+	background-color: lightblue;
+
+}
+
+/* text field */
+.inputs{
+	margin: 5px;
+
+	padding: 10px;
+	padding-left: 10px;
+
+	border: 1px solid lightgrey;
+	border-radius: 3.75px;
+
+	background-color: transparent;
+	outline:  none;
+
+	margin-bottom: 30px;
+}
+
+.inputs:focus, .inputs:hover{
+	transition: .4s ease;
+	box-shadow: 0px 0px 3px 1px lightgrey;
+}
+
+/* button */
+#guest-login{
+
+	width: 100px;
+
+	padding: 7px;
+	padding-right: 14px; 
+	padding-left: 14px;
+
+	margin: 4px;
+	border-radius: 3px;
+	outline: none;
+
+	background-color: transparent;
+
+	border: 1px solid black;
+
+	font-weight: normal;
+}
+#guest-login:hover{
+	transition: .2s ease;
+	box-shadow: 0px 0px 1px 2px black;	
+
+	background-color: black;
+	color: white;
+}
+
+#guest-login:active{
+	box-shadow: 0px 0px 2px 4px grey;	
+}
+
+
+.logindiv{
+	
+	border-top: 1px solid darkgrey;
+	border-bottom: 1px solid darkgrey;
+
+	background-color: white;
+
+	padding: 30px;
+}
+
+.about{
+	padding: 40px;
+}
+
+h2{
+	font-family: "Arial Black";
+	margin-bottom: 20px;
+}
+
+li{
+	text-align: left;
+	font-family: Arial;
+}

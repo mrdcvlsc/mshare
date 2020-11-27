@@ -1,0 +1,25 @@
+			<!-- END OF CONTENTS -->
+			</div>
+		</div>
+
+		<div class="upload-pad">
+			<div class="upload-block" id="upload-window-open">
+				<input type="button" id="close-upload" value="x"
+				onclick="document.getElementById('upload-window-open').style.visibility = 'hidden'">
+				<label class="upload-label">Guest Upload</label>
+
+				<div class="upload">
+					<form class="file-upload" action="/files/login-guest/upload" enctype="multipart/form-data" method="POST">
+						<input type="file" class="file-to-upload" name="selectedFile" multiple required><br>
+						<input type="submit" class="upload-button" value="Upload">
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<h3>ABOUT</h3>
+		<p>Licence: MIT</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Files</title>
+	<meta name="theme-color" content="lightblue">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="/css/welcome.css">
+	<script type="text/javascript" src="/js/welcome.js"></script>
+</head>
+<body>
+	<div class="main">
+		<h1>mshare</h1>
+		<div class="logindiv">
+			<div class="guestc" id="guest">
+				<form class="loginform" action="/files/login-guest" method="POST">
+					<input type="text" name="username" placeholder="Your Name" class="inputs" required><br>
+					<input type="submit" name="guest-login" value="open host" id="guest-login" class="auth-button">
+				</form>
+			</div>
+		</div>
+
+		<div class="about">
+		<h2>share your files with other devices</h2>
+			<li>view uploaded files in host storage</li>
+			<li>upload files in the host storage</li>
+			<li>download a file in the host storage</li>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+h1{
+	font-family: "Arial Black", sans-serif;
+	font-size: 40px;
+	margin:10px;
+	text-align: center;
+	text-shadow: 0px 2px 2px grey;
+	color: white;
+}
+
+h2{
+	font-family: "Consolas", sans-serif;
+	font-size: 15px;
+	margin:10px;
+	text-align: center;
+} 
+
+/* Grand Parent Block */
+.main-block{
+	padding: 5px;
+
+	min-width: 320px;
+	max-width: 720px;
+	
+	margin: auto;
+
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-radius: 0px 0px 7px 7px / 0px 0px 7px 7px;
+
+	background-color: lightblue;
+
+}
+
+/* Parent Block */
+.download-block{
+
+	margin-bottom: 20px;
+
+	padding: 30px;
+	height: 95%;
+
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+
+	background-color: lightgrey;
+}
+
+.uploading_load{
+	position: absolute;
+	left: 43%;
+	border: 5px solid white;
+	border-bottom: 5px solid yellow;
+	border-top: 5px solid orange;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	animation: spin 0.9s linear infinite;
+	-webkit-animation: spin 0.9s linear infinite;
+	visibility: hidden;
+}
+
+@-webkit-keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.upload-pad{
+
+	padding: 10px;
+	position: relative;
+
+	left: 0px;
+	top: 0px;
+	height: 0px;
+	visibility: hidden; /*hidden*/
+}
+
+.upload-block{
+	max-width: 500px;
+	margin:auto;
+	
+	border: orange solid 1px;
+	background-color: white;
+	border-radius: 7px 7px 7px 7px / 7px 7px 7px 7px;
+	padding: 20px;
+	visibility: hidden; /*hidden*/
+}
+
+ .upload-block>*{
+ 	margin: 5px;
+	padding: 5px;
+ }
+
+/* child block */
+.download{
+	margin: 5px;
+	padding: 5px;
+	overflow: auto;
+	width: 95%;
+	height: 90%;
+	min-height: 300px;
+	max-height: 600px;
+	border: 1px solid black;
+	background-color: grey;
+}
+
+.upload{ border: green solid 5px; }
+
+.window-upload{
+	font-weight: bold;
+	color: white;
+	background-color: green;
+	height: 80px;
+	width: 80px;
+	border: 4px solid white;
+	border-radius: 50%;
+	position: absolute;
+	left: auto;
+	top: auto;
+	outline:none;
+}
+
+.window-upload:hover{
+	transition: .3s ease;
+	box-shadow: 0px 0px 2px 2px black;
+}
+
+.window-upload:focus{
+	transition: .3s ease;
+	box-shadow: 0px 0px 2px 4px green;
+}
+
+#close-upload{
+	background-color: red;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	outline: none;
+	height:30px;
+	width: 30px;
+	border: 1px solid black;
+	border-radius: 50%;
+	font-size: 20px;
+	padding: 2px;
+}
+
+#close-upload:hover{
+	border-color: red;
+	transition: ease;
+	box-shadow: 0px 0px 1px 4px red;	
+}
+
+#close-upload:active{
+	transition: ease;
+	border-color: lightblue;
+	background: lightblue;
+	color: red;
+	transition: ease;
+	box-shadow: 0px 0px 1px 4px red;	
+}
+
+/* DOWNLOAD FILE */
+.download-container{
+	margin: 5px;
+	padding: 5px;
+	display: inline-block;
+	overflow: hidden;
+	height: 140px;
+	width: 128px;
+	text-align: center;	
+}
+
+.file-button-link{
+	width: 80%;
+	height: 75%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.file-button-name, .file-button-size{
+	font-family: Arial, "Arial Black", sans-serif;
+	font-size: 13px;
+	display: inline-block;
+	width: 155px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: white;
+}
+
+/* labels */
+.files-label, .upload-label{
+	font-family: Arial, Veranda;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 10px;
+}
+
+/* upload */
+
+.file-to-upload{
+	border: grey solid 1px;
+	border-style: all;
+	margin: 30px;
+}
+
+.file-upload{
+	text-align: center;
+}
+.upload-button{
+	font-weight: bold;
+	height: 40px;
+	width: 100px;
+	margin: 20px;
+	outline: none;
+	border: 4px solid orange;
+	color: white;
+	background-color: orange;
+	border-radius: 9px 9px 9px 9px / 9px 9px 9px 9px;
+}
+
+.upload-button:hover{
+	color: orange;
+	background-color: white;
+}
+
+.upload-button:focus{
+	box-shadow: 0px 0px 2px 4px orange;
+}
