@@ -3,21 +3,21 @@ a simple node web app used for sharing and hosting files across local network
 
 ## REQUIREMENTS
 
-1. You should have nodejs installed in your system
+1. You should have ***nodejs installed*** in your system
 
-2. You should have set your nodejs bin path to environment variables(the installer for windows automatically does this as I remember)
+2. You should have set your nodejs bin path to ***environment variables***(the installer for windows automatically does this as I remember)
 
-3. You should have internet connection to install dependencies
+3. You should have ***internet connection*** to install dependencies
 
 ----------------------------------------------------------
 
 ## SETUP FOR BEGINERS
 
-1. Select or create a folder/directory where you want to put this project.
+1. ***Select or create*** a folder/directory where you want to put this project.
 
-2. Download this repository, and extract it.
+2. ***Download this repository***, and extract it.
 
-3. Move or Copy the project's folder called **mshare** into your created or selected folder
+3. ***Move or Copy*** the project's folder called **mshare** into your ***created or selected folder***
 
 4. Go inside the **mshare** folder after you copy/move it... then copy its directory/path
 
@@ -25,7 +25,7 @@ a simple node web app used for sharing and hosting files across local network
 
     ex: **cd "the/copied/path/mshare"**
     
-6. then we need to install dependencies(internet connection required), to do that input the command below in the command line and hit enter 
+6. then we need to ***install dependencies***(internet connection required), to do that input the command below in the command line and hit enter 
 
     **npm install**
   
@@ -55,7 +55,7 @@ this will start the main js app that will serve/host the web app in your local n
 
 **"node fileserver_linux.js"**
 
-NOTE FOR LINUX USERS : you should also compile the ***html_generate.cpp*** with C++17 ( ***-std=c++17*** ) file inside the folder because the the one in the repository was for windows only, you can simply achive this if you have make by inputing **make linux**
+*NOTE FOR LINUX USERS* : you should also compile the ***html_generate.cpp*** with C++17 ( ***-std=c++17*** ) file inside the folder because the the one in the repository was for windows only, you can simply achive this if you have make by inputing **make linux**
 
 ----------------------------------------------------------
 
