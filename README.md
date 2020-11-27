@@ -21,13 +21,13 @@ a simple node web app used for sharing and hosting files across local network
 
 4. Go inside the **mshare** folder after you copy/move it... then copy its directory/path
 
-5. open the command line(cmd) then type "**cd "**" then press **ctrl+v**(paste the path) then put a double-quote(**"**) at the end then hit enter.
+5. open the command line(cmd) then type **cd "** then press **ctrl+v** (paste the path) then put a double-quote **"** at the end then hit enter.
 
     ex: **cd "the/copied/path/mshare"**
     
 6. then we need to install dependencies(internet connection required), to do that input the command below in the command line and hit enter 
 
-  **npm install**
+    **npm install**
   
 ----------------------------------------------------------
   
@@ -55,6 +55,8 @@ this will start the main js app that will serve/host the web app in your local n
 
 **"node fileserver_linux.js"**
 
+NOTE FOR LINUX USERS : you should also compile the ***html_generate.cpp*** with C++17 ( ***-std=c++17*** ) file inside the folder because the the one in the repository was for windows only, you can simply achive this if you have make by inputing **make linux**
+
 ----------------------------------------------------------
 
 ## TO VIEW SHARED FILES FROM OTHER DEVICES
@@ -63,12 +65,14 @@ To view files from other devices you should have done the "TO START HOSTING/SERV
 
 1.) to access the web app in other devices, use the appropriate IP address being displayed by the "node fileserver_win.js or fileserver_linux.js" use that as a url for other devices and add a "/files" in it 
 
-  Windows host url format: http://HOST_IP/files
+  Windows host url format: ***http://HOST_IP/files***
   
-  Linux host url format: http://HOST_IP:3000/files (you can also setup linux to do the same http request like in windows but there is more work that using port 3000)
+  Linux host url format: ***http://HOST_IP:3000/files*** (you can also setup linux to do the same http request like in windows but there is more work that using port 3000)
   
 ex in browser : ***https:192.168.5.123/files*** or add a :3000 for linux ***https:192.168.5.123:3000/files***  
-  
+
+if node is saying that your port is not avilable, you can change it, it is inside the fileserver_win.js or fileserver_linux.js at the end of the files, use a text editor
+
 ## sample image
 
 ![Main Device Running NODE](/public/images/commandline.png) ![Other Device in the same network](/public/images/otherdevice.jpg)
