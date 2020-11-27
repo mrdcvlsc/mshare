@@ -160,7 +160,7 @@ int main(){
 	}
 
 	cout<<"second"<<endl;
-	string newHtml = getFILE_str(htmlHead), tempsource = "/images/format";
+	string newHtml = getFILE_str(htmlHead), tempsource = "/images/format/";
 	for(int i = 0; i < guestFiles.size(); ++i){
 		newHtml = newHtml + "\n" +
 			"\t\t\t\t<div class=\"download-container\">\n" +
