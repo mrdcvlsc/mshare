@@ -28,4 +28,4 @@ a simple node web app used for sharing and hosting files across local network
 ## sample image
 
 ![Main Device Running NODE](/public/images/commandline.png)
-![Other Device in the same network](/public/images/otherdevice.png)
+![Other Device in the same network](/public/images/otherdevice.jpg)
