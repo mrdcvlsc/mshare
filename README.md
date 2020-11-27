@@ -17,7 +17,7 @@ a simple node web app used for sharing and hosting files across local network
 
 WINDOWS - to start run in command line **"node fileserver_win.js"** in the same mshare folder directory to start serving/hosting files
 
-LINUX   - **"node fileserver_linux"**
+LINUX   - **"node fileserver_linux.js"**
 
 ## TO VIEW SHARED FILES FROM OTHER DEVICES
 
