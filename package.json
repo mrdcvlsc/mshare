@@ -1,13 +1,18 @@
 {
-  "name": "webfileserver",
+  "name": "mshare",
   "version": "1.0.0",
   "description": "a simple web file hosting/sharing app",
-  "main": "filewebserver.js",
+  "main": "fileserver_win.js",
   "scripts": {
-    "start": "node filewebserver.js",
+    "start": "node fileserver_linux.js",
+    "start": "node fileserver_win.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["file server", "file hosting", "file sharing"],
+  "keywords": [
+    "file server",
+    "file hosting",
+    "file sharing"
+  ],
   "author": "mrdcvlsc",
   "license": "MIT",
   "dependencies": {
