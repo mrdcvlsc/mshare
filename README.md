@@ -24,3 +24,8 @@ a simple node web app used for sharing and hosting files across local network
   EX: http://HOST_IP/files
   
 4.) now you can access the hosted files and upload or download files to/from the host
+
+## sample image
+
+![Main Device Running NODE](/public/images/commandline.png)
+![Other Device in the same network](/public/images/otherdevice.png)
