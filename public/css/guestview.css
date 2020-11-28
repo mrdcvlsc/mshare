@@ -22,7 +22,7 @@ h2{
 
 /* Grand Parent Block */
 .main-block{
-	padding: 5px;
+	padding: 0px;
 
 	min-width: 320px;
 	max-width: 720px;
@@ -90,7 +90,7 @@ h2{
 	position: relative;
 
 	left: 0px;
-	top: 0px;
+	top: 170px;
 	height: 0px;
 	visibility: hidden; /*hidden*/
 }
