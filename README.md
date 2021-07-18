@@ -38,7 +38,6 @@ a simple node web app used for sharing and hosting files across local network
 ### for windows
 
 ```
-cd your/selected/directory
 git clone https://github.com/mrdcvlsc/mshare.git
 cd mshare
 npm install
@@ -48,7 +47,6 @@ node fileserver_win.js
 ### for linux
 
 ```
-cd your/selected/directory
 git clone https://github.com/mrdcvlsc/mshare.git
 cd mshare
 npm install
