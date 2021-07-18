@@ -65,7 +65,7 @@ string eraseSubStr(string mainStr, const string strErase){
 }
 
 string getFileExtension(string File){
-	int start,
+	int start = 0,
 	    last = File.size()-1;
 	for(int bi = last; bi; --bi){
 		if(File[bi] == '.'){
