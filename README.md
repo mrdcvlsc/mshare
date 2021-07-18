@@ -31,37 +31,33 @@ a simple node web app used for sharing and hosting files across local network
   
 ----------------------------------------------------------
   
-## SETUP FOR THOSE WHO KNOW GIT... YOU KNOW THIS ALREADY, in the command line enter the following
+## SETUP WITH GIT, AND RUNNING/HOSTING THE APPLICATION
 
-1. **cd your/selected/directory**
+**in your command line termina, cd to the directory where you want to put the node app, ex: ```cd "C:/Documents/myapplication"```, then run the following command below**
 
-2. **git clone https://github.com/mrdcvlsc/mshare.git**
+### for windows
 
-3. **cd mshare**
+```
+cd your/selected/directory
+git clone https://github.com/mrdcvlsc/mshare.git
+cd mshare
+npm install
+node fileserver_win.js
+```
 
-4. **npm install**
+### for linux
 
+```
+cd your/selected/directory
+git clone https://github.com/mrdcvlsc/mshare.git
+cd mshare
+npm install
+make linux
+node fileserver_linux.js
+```
 ----------------------------------------------------------
 
-## TO START HOSTING/SERVING FILES
-
-after you install dependencies(npm install) in the mshare directory... input the command below in command line according to your environment.
-
-this will start the main js app that will serve/host the web app in your local network
-
-### FOR WINDOWS
-
-**"node fileserver_win.js"** 
-
-### FOR LINUX
-
-**"node fileserver_linux.js"**
-
-*NOTE FOR LINUX USERS* : you should also compile the ***html_generate.cpp*** with C++17 ( ***-std=c++17*** ) file inside the folder because the the one in the repository was for windows only, you can simply achive this if you have make by inputing **make linux**
-
-----------------------------------------------------------
-
-## TO VIEW SHARED FILES FROM OTHER DEVICES
+## UPLOAD AND VIEW FILES IN ANY DEVICE THAT IS CONNECTED TO THE NETWORK WHERE THE HOST IS ALSO CONNECTED USING YOUR BROWSER
 
 To view files from other devices you should have done the "TO START HOSTING/SERVING FILES" step above.
 
