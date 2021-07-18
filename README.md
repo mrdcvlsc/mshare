@@ -31,7 +31,7 @@ a simple node web app used for sharing and hosting files across local network
   
 ----------------------------------------------------------
   
-## SETUP WITH GIT, AND RUNNING/HOSTING THE APPLICATION
+## SETUP WITH GIT, G++, THEN RUNNING THE APPLICATION
 
 **in your command line termina, cd to the directory where you want to put the node app, ex: ```cd "C:/Documents/myapplication"```, then run the following command below**
 
@@ -41,6 +41,7 @@ a simple node web app used for sharing and hosting files across local network
 git clone https://github.com/mrdcvlsc/mshare.git
 cd mshare
 npm install
+g++ -std=c++17 -o html_generate.exe html_generate_win.cpp
 node fileserver_win.js
 ```
 
