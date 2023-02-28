@@ -16,10 +16,11 @@ const storage    = multer.diskStorage({
 	}
 });
 
-
 const upload = multer({ storage:storage });
 const { spawn } = require('child_process'); // use for running programs/script/application (async) at the server
 const fileserver = express();
+
+const PORT = process.env.PORT || 8000
 
 // engine for user session
 fileserver.use(session({
@@ -66,6 +67,10 @@ fileserver.use(express.static('public'));
 fileserver.use(bodyParser.urlencoded({extended : true}));
 fileserver.use(bodyParser.json());
 
+fileserver.get('/', (req, res) => {
+	console.log('home test')
+	res.send('test string')
+});
 
 fileserver.get('/files/', (req,res) => {
 	res.sendFile(path.join(`${__dirname}/public/html/welcome.html`));
@@ -149,28 +154,21 @@ fileserver.post('/files/login-guest/upload', upload.array('selectedFile', MAX_NU
 
 'use strict';
 
-const {networkInterfaces} = require('os');
+const os = require('os')
+const networkInterfaces = os.networkInterfaces()
 
-const nets = networkInterfaces();
-const results = Object.create(null);
+console.log('\nOpen the app-server-ip using your browser')
 
-for(const name of Object.keys(nets)){
-	for(const net of nets[name]){
-		if(net.family === 'IPv4' && !net.internal){
-			if (!results[name]){
-				results[name] = [];
-			}
-			results[name].push(net.address);
-		}
-	}
-	
+if (typeof networkInterfaces.wlp2s0 !== 'undefined') {
+  console.log(`\n(a) app-server-ip: http://${networkInterfaces.wlp2s0[0].address}:${PORT}/files/\n`)
+} else if (typeof networkInterfaces.enp3s0f1 !== 'undefined') {
+  console.log(`\n(b) app-server-ip: http://${networkInterfaces.enp3s0f1[0].address}:${PORT}/files/\n`)
+} else if (typeof networkInterfaces['Wi-Fi'] !== 'undefined') {
+  console.log(`\n(c) app-server-ip: http://${networkInterfaces['Wi-Fi'][1].address}:${PORT}/files/\n`)
+} else if (typeof networkInterfaces.Ethernet !== 'undefined') {
+  console.log(`\n(d) app-server-ip: http://${networkInterfaces.Ethernet[1].address}:${PORT}/files/\n`)
+} else {
+  console.log('\nno IP found for sharing over the network')
 }
 
-console.log("USE THE PROPER IP ADDRESS TO CONNECT WITH OTHER DEVICES");
-console.log("\nif you want to share your files with other devices that is connected in you wi-fi");
-console.log("use that address in the browser of the other device to access your files\n")
-console.log("HOST_IP(s):")
-console.log(results);
-console.log("\nTo use input 'http://HOST_IP/files' or just 'HOST_IP/files' on other devices browser");
-console.log("\nEXAMPLE ONLY : http://192.168.5.2/files")
-fileserver.listen(3000,console.log('FILE SERVER: STARTED')); // http 
+fileserver.listen(PORT, '0.0.0.0', console.log('FILE SERVER: STARTED')); // http 
